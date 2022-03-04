@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+#nav{
+    height: 68px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.title h2{
+    color:#fff;
+    font-family: 'Redressed', cursive;
+    margin-left: 40px;
+    font-size: 35px;
+}
+.title h2 span{
+    color: crimson;
+}
+.components ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+}
+.components ul li{
+    margin-left: 15px;
+    color: #fff;
+    font-family: 'Hubballi', cursive;
+    font-weight: bold;
+    font-size: 22px;
+}
+.components ul li:hover{
+    color: crimson;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all .5s ease;
+}
+.slide-btn{
+    display: none;
+    height: 25px;
+    width: 30px;
+    margin-right: 20px;
+    place-items: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slide-btn img{
+    height: 24px;
+    width: 24px;
+}
+.none{
+    display: none;
+}
+.popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    width: 100vw;
+    height: 150px;
+    background-color: #000;
+    animation: updown .3s ease forwards;
+}
+.popup ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+.popup ul li{
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Hubballi', cursive;
+    font-weight: bold;
+    font-size: 22px;
+}
+.popup ul li:hover{
+    color: crimson;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all .5s ease;
+}
+
+/* media query */
+@media screen and (max-width:750px){
+    .components{
+      display: none;
+    }
+    .slide-btn{
+      display: inline;
+    }
+}
+@keyframes updown{
+    0%{
+        height: 0px;
+    }
+    25%{
+        height: 37.5px;
+    }
+    50%{
+        height: 75px;
+    }
+    75%{
+        height: 112.5px;
+    }
+    100%{
+        height: 150px;
+    }
+}

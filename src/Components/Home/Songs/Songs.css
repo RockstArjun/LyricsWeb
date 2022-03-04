@@ -1,0 +1,19 @@
+#songs{
+    margin-top: 68px;
+    position: absolute;
+    width: 100%;
+}
+.songs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px 50px 30px;
+}
+.songs h2{
+    margin-bottom: 10px;
+    font-family: 'Redressed', cursive;
+}
+.songs p{
+    font-family: 'Hubballi', cursive;
+}
